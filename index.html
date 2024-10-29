@@ -2,24 +2,42 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<!--character set should not be changed -->
+<!--character set should not be changed -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-<title>Test site</title>
+<title>Test site</title>	
+
 </head>
-	<!--Header cannot be seen from outside, body can 
-		Text shown in orange is usually dealt with in CSS	-->
+<!--Header cannot be seen from outside, body can 
+	Text shown in orange is usually dealt with in CSS
+	Remember to save, to see changes applied 
+-->
+	
+	
+	
+	
 <body>
-	<h1>Welcome to My Test Site</h1>
-<img src="img/IMG_4999.JPG" alt="alternativ tekst" style="width:100px;">
-	<img src="img/IMG_4999.JPG" width="5184" height="3456" alt=""/>
-	<img scr=> 
+	
+<h1>Welcome to My Test Site</h1>
+<img src="img/unknown (3).webp" width="1000" height="300" alt="Alternative text"/>
+<!--Billeder - alt="" er en alternativ teks der beskriver hvad billedet er, er god til SEO og synsnedsættelse. 		Alle billeder der skal inkluderes, skal være i gitHub mappen
+	Du kan også auto indsætte billeder via Insert til øverst højre-->
+
 		<hr>
-	<h2>header 2 example </h2>
-		<br> 
+	<h2>Header 2 example </h2>
+	<p>On the site <a href="https://www.w3schools.com">W3School</a>, we get help to some link codes or elements</p>
+	<p>Click <a Href="#CnL">Here</a> to go to contacts and links</p>
+<br> 
 	<!-- br creates a space between, hr creates a line-->
 	<h6>Example of smallest text, header 6</h6>
 	<p><b>Insert description here</b></p>
 	<h3>Do not use SO<sub>4</sub>NO on this site</h3>
+	
+	<h4>Indlejring af YouTube links via del - indlejring </h4>
+	<!--Insættelse af youtube links eller lign, er ved at trykke del på video og vælg indlejr -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vnerJ3LLqL8?si=gMfgTFlWfHsm6lAV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	
+	
 	<!-- ol parent, creates "ordered list", li is "list items" -->
 	<ol>
 		<li>nummer 1</li>
@@ -56,8 +74,39 @@ Colspan er når det dækker over flere felter/kolonnerr, rowspan er rækker-->
 			<td>Søndag</td>
 		</tr>
 	</table>
+	<br>
+<!--Formates - Man kan lave textbokse til udfyldning ved at bruge form og label. 
+	For at skifte linje mellem skal der br imellem -->
+<form>
+		<label>Fornavn:*</label> <input type="text" value="Insert first name here"> 
+		<label>Efternavn:*</label> <input type="text" value="Insert last name here">
+		<br> <br>
+		<label>Email:</label> <input type="text" value="Insert Email adress here"> 
+		<br>
+		<label>Phone:</label> <input type="text" value="Insert phone number here">
+		
+	</form>
 	
-	<!--Billeder - alt="" er en alternativ teks der beskriver hvad billedet er, er god til SEO og synsnedsættelse. Alle billeder der skal inkluderes, skal være i gitHub mappen-->
+
+<!-- Billeder og tekst er inline elementer, block level elementer er headers... 
+	Class og ID er gode til at tilføje personlighed. Kæder specifikke dele af hjemmeside sammen med elementer i style sheet
+	Class er fx font og farve der sættes på flere elementer
+	ID er unikt og kan kun være et sted
+-->
+	
+<!-- Containers er brugt til at inddele ting in sektioner-->
+	<div style="background-color: lightgrey; border: 1px green;"> 
+	  <h2 id="CnL">Contacts and Links</h2>
+		<hr>
+		<p>Click <a href="https://eadania.mrooms.net/course/view.php?id=5888#section-4" Target="_blank"> Here</a> to check outside links...</p>
+		<p>Click <a href="img/IMG_4999.JPG"> Here</a> to view relative links</p>
+		<p>Click <a href="mailto:nakr6@student.eadania.dk">Here</a> to Email me</p>
+		<p>Click <a href="tel:+45 21181921" id="test">Here</a> to <b>call</b> me</p>
+		<br><br>
+		<embed src="img/rNYrkK2o.gif" width="32" height="32">
+
+	
+</div>
 
 	
 	
